@@ -1,0 +1,70 @@
+{% extends 'portfolio/base_spanish.html' %}
+
+{% block title %}Habilidades{% endblock %}
+
+
+{% block content %}
+<!--Skills-->
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-center"><strong>Habilidades</strong></h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <h2 class="text-center text-white bg-primary rounded"><strong>Habilidades Técnicas</strong></h2>
+        <ul class="" style="background-color: white;">
+            {% for item in hard %}
+            <li>{{ item.titulo }}</li>
+            {% endfor%}
+        </ul>
+        <br>
+    </div>
+
+    <div class="col-xs-12 col-md-6 col-lg-6">
+        <h2 class="text-center text-white bg-primary rounded"><strong>Habilidades Blandas</strong></h2>
+        <ul class="" style="background-color:white;">
+            {% for item in soft %}
+            <li class="text-justify">{{ item.titulo }}</li>
+            {% endfor%}
+        </ul>
+        <br>
+    </div>
+</div>
+
+<!--Programming Languages-->
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-center"> <strong>Lenguajes de Programación</strong> </h1>
+    </div>
+</div>
+
+
+<div class="row">
+    {% for item in lang %}
+    <div class="col-6 col-sm-6 col-xs-4 col-md-4 col-lg-4 text-center">
+        <img src="{{ item.image.url }}" alt="" style="width: 10rem; height: auto;">
+        <h2 class="text-center">{{ item.level }}</h2>
+    </div>
+    {% endfor%}
+</div>
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-center"> <strong>Otras Habilidades y Tecnologías</strong> </h1>
+    </div>
+</div>
+
+<div class="row">
+    {% for item in others %}
+    <div class="col-6 col-sm-6 col-xs-4 col-md-4 col-lg-4 text-center">
+        <img src="{{ item.image.url }}" alt="" style="width: 10rem; height: auto;">
+        <h2 class="text-center">{{ item.level }}</h2>
+    </div>
+    {% endfor%}
+</div>
+
+{% endblock %}

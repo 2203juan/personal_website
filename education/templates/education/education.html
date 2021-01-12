@@ -1,0 +1,32 @@
+{% extends 'portfolio/base_spanish.html' %}
+
+{% block title %}Education{% endblock %}
+
+
+{% block content %}
+<!--Education-->
+
+<div class="row">
+    <div class="col">
+        <h1 class="text-center text-white bg-primary rounded"><strong>Educación</strong></h1>
+    </div>
+    <br>
+</div>
+
+<div class="container">
+    <div class="row">
+        {% for item in education %}
+        <div class="col-xs-6 col-md-6 col-lg-4">
+            <div class="card mx-auto" style="width: 18rem; margin-bottom: 2rem; margin-top: 2rem;">
+                <img class="card-img-top" src="{{ item.image.url }}" alt="Card image cap">
+                <div class="card-body">
+                    <h3 class="card-text"><strong>{{ item.title }}</strong></h3>
+                    <p class="card-text">{{ item.date_start }} - {{ item.date_end }}</p>
+                    <p class="card-text">{{ item.institution }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+</div>
+{% endblock %}
