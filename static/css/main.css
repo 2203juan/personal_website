@@ -1,0 +1,40 @@
+body {
+    padding-top: 100px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+
+}
+
+
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
+
+    /* the rest of your styling */
+}
+
+.tech {
+    width: 1px;
+    height: 1px;
+}
+
+.rating > span:hover:before {
+    content: "\2605";
+    position: absolute;
+ }
+
+body.color {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-white-simple-artificial-intelligence-technology-promotion-banner-poster-image_194342.jpg");
+}
+
+div.color {
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-white-simple-artificial-intelligence-technology-promotion-banner-poster-image_194342.jpg");
+}
+
+.home_text{
+    color:#006B8A;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
