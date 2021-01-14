@@ -25,7 +25,7 @@ SECRET_KEY = 'e$a-adq-!q!-4xe)_^z$gs3)0n=chi63=$w0-=u%wepoc9r@=c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['juandeveloper.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.juandeveloper.com']
 
 
 # Application definition
