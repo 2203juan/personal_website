@@ -13,7 +13,7 @@ class Project(models.Model):
 
 class ProjectSpanish(models.Model):
     titulo = models.CharField(max_length = 50)
-    descripcion = models.TextField(max_length = 500)
+    descripcion = models.TextField(max_length = 1500)
     imagen = models.ImageField(upload_to = "portfolio/images/")
     url = models.URLField(blank = True)
 
